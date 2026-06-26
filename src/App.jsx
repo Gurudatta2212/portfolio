@@ -12,18 +12,22 @@ import Contact from "./components/sections/Contact";
 
 import ScrollProgress from "./components/ui/ScrollProgress";
 import ScrollTop from "./components/ui/ScrollTop";
+import AnimatedBackground from "./components/ui/AnimatedBackground";
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white overflow-x-hidden">
+    <div className="relative min-h-screen overflow-x-hidden bg-slate-950 text-white">
+      {/* Animated Background */}
+      <AnimatedBackground />
+
       {/* Scroll Progress */}
       <ScrollProgress />
 
-      {/* Navigation */}
+      {/* Navbar */}
       <Navbar />
 
-      {/* Sections */}
-      <main>
+      {/* Main Content */}
+      <main className="relative z-10">
         <Hero />
         <About />
         <Skills />
@@ -34,7 +38,7 @@ function App() {
         <Contact />
       </main>
 
-      {/* Floating Button */}
+      {/* Scroll To Top */}
       <ScrollTop />
 
       {/* Footer */}
