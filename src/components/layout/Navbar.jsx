@@ -44,9 +44,13 @@ function Navbar() {
             GitHub
           </a>
 
-          <button className="bg-cyan-500 text-black px-4 py-2 rounded-lg hover:bg-cyan-600 transition">
-            Resume
-          </button>
+          <a
+  href="/resume/Gurudatta_Mulage_Resume.pdf"
+  download
+  className="bg-cyan-500 text-black px-4 py-2 rounded-lg hover:bg-cyan-600 transition"
+>
+  Resume
+</a>
         </div>
 
         <button

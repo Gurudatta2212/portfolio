@@ -52,9 +52,13 @@ function Hero() {
               GitHub
             </a>
 
-            <button className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black px-7 py-3.5 rounded-xl transition duration-300">
-              Download Resume
-            </button>
+            <a
+  href="/resume/Gurudatta_Mulage_Resume.pdf"
+  download
+  className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black px-6 py-3 rounded-xl transition"
+>
+  Download Resume
+</a>
           </div>
         </motion.div>
 
