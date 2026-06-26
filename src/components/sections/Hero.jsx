@@ -7,7 +7,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen bg-slate-950 text-white flex items-center"
+      className="min-h-screen bg-slate-950 text-white flex items-center pt-24"
     >
       <div className="max-w-7xl mx-auto w-full px-6 grid lg:grid-cols-2 gap-16 items-center">
 
@@ -47,12 +47,12 @@ function Hero() {
               href={portfolio.personal.github}
               target="_blank"
               rel="noreferrer"
-              className="bg-cyan-500 hover:bg-cyan-600 text-black px-6 py-3 rounded-xl font-semibold transition"
+              className="bg-cyan-500 hover:bg-cyan-600 text-black px-7 py-3.5 rounded-xl font-semibold transition duration-300"
             >
               GitHub
             </a>
 
-            <button className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black px-6 py-3 rounded-xl transition">
+            <button className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black px-7 py-3.5 rounded-xl transition duration-300">
               Download Resume
             </button>
           </div>
@@ -60,16 +60,35 @@ function Hero() {
 
         {/* Right Side */}
         <motion.div
-          className="flex justify-center"
+          className="relative flex justify-center"
           initial={{ opacity: 0, x: 80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
+          {/* Projects Card */}
+          <div className="hidden lg:block absolute top-6 -left-10 bg-slate-900/90 backdrop-blur-md border border-cyan-500 rounded-2xl px-5 py-3 shadow-xl">
+            <h3 className="text-cyan-400 text-2xl font-bold">2+</h3>
+            <p className="text-sm text-slate-300">Projects</p>
+          </div>
+
+          {/* Internship Card */}
+          <div className="hidden lg:block absolute bottom-8 -left-14 bg-slate-900/90 backdrop-blur-md border border-cyan-500 rounded-2xl px-5 py-3 shadow-xl">
+            <h3 className="text-cyan-400 text-xl font-bold">3 Months</h3>
+            <p className="text-sm text-slate-300">Internship</p>
+          </div>
+
+          {/* Percentage Card */}
+          <div className="hidden lg:block absolute top-20 -right-10 bg-slate-900/90 backdrop-blur-md border border-cyan-500 rounded-2xl px-5 py-3 shadow-xl">
+            <h3 className="text-cyan-400 text-2xl font-bold">88.74%</h3>
+            <p className="text-sm text-slate-300">Diploma</p>
+          </div>
+
+          {/* Profile Image */}
           <div className="w-80 h-80 lg:w-[420px] lg:h-[420px] rounded-full border-4 border-cyan-500 shadow-2xl overflow-hidden bg-slate-900">
             <img
               src={profile}
               alt="Profile"
-               className="w-80 h-80 lg:w-[420px] lg:h-[420px] rounded-full object-cover object-[center_15%] border-4 border-cyan-500 shadow-2xl"
+              className="w-80 h-80 lg:w-[420px] lg:h-[420px] rounded-full object-cover object-[center_15%] border-4 border-cyan-500 shadow-2xl"
             />
           </div>
         </motion.div>
