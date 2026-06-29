@@ -11,6 +11,7 @@ const portfolio = {
     github: "https://github.com/Gurudatta2212",
     linkedin: "",
     portfolio: "",
+    instagram: "https://www.instagram.com/gurudatta.22?igsh=MXRndGF1NmdnZWpxeQ==",
 
     about:
       "I am a passionate Frontend Developer and Computer Engineering student with hands-on experience in React.js, JavaScript, Tailwind CSS, Node.js, and modern web technologies. I enjoy building responsive, user-friendly web applications and continuously improving my skills by working on real-world projects and learning new technologies.",
@@ -189,14 +190,15 @@ const portfolio = {
   ],
 
   contact: {
-    email: "gurudattamulage@gmail.com",
-    phone: "+91 7977463385",
-    location: "Panvel, Maharashtra, India",
+  email: "gurudattamulage@gmail.com",
+  phone: "+91 7977463385",
+  location: "Panvel, Maharashtra, India",
 
-    github: "https://github.com/Gurudatta2212",
-    linkedin: "",
-    portfolio: "",
-  },
+  github: "https://github.com/Gurudatta2212",
+  linkedin: "",
+  instagram: "https://www.instagram.com/gurudatta.22?igsh=MXRndGF1NmdnZWpxeQ==",
+  portfolio: "",
+},
 };
 
 export default portfolio;
