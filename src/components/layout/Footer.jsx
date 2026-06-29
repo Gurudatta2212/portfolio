@@ -54,12 +54,16 @@ function Footer() {
 )}
 
 
-              <a
-  href={`mailto:${portfolio.personal.email}`}
+              <button
+  onClick={() =>
+    document
+      .getElementById("contact")
+      ?.scrollIntoView({ behavior: "smooth" })
+  }
   className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-xl transition-all duration-300 hover:bg-cyan-500 hover:text-black hover:scale-110 hover:shadow-lg hover:shadow-cyan-500/40"
 >
   <FaEnvelope />
-</a>
+</button>
 
             </div>
 
