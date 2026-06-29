@@ -46,7 +46,7 @@ function Hero() {
           <div className="flex flex-wrap gap-3 mt-6">
 
             <span className="px-4 py-2 rounded-full bg-cyan-500/20 border border-cyan-500 text-cyan-400">
-              🟢 Available for Projects
+              🟢 Available for Work
             </span>
 
             <span className="px-4 py-2 rounded-full bg-slate-800 border border-slate-700">
