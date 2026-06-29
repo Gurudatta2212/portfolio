@@ -1,4 +1,8 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import {
+  FaGithub,
+  FaEnvelope,
+  FaInstagram,
+} from "react-icons/fa";
 import portfolio from "../../data/portfolio";
 
 function Footer() {
@@ -30,31 +34,32 @@ function Footer() {
             <div className="flex gap-6">
 
               <a
-                href={portfolio.personal.github}
-                target="_blank"
-                rel="noreferrer"
-                className="w-12 h-12 rounded-full bg-slate-800 hover:bg-cyan-500 hover:text-black transition duration-300 flex items-center justify-center text-xl"
-              >
-                <FaGithub />
-              </a>
+  href={portfolio.personal.github}
+  target="_blank"
+  rel="noreferrer"
+  className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-xl transition-all duration-300 hover:bg-green-500 hover:text-black hover:scale-110 hover:shadow-lg hover:shadow-cyan-500/40"
+>
+  <FaGithub />
+</a>
 
-              {portfolio.personal.linkedin && (
-                <a
-                  href={portfolio.personal.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-12 h-12 rounded-full bg-slate-800 hover:bg-cyan-500 hover:text-black transition duration-300 flex items-center justify-center text-xl"
-                >
-                  <FaLinkedin />
-                </a>
-              )}
+              {portfolio.personal.instagram && (
+  <a
+    href={portfolio.personal.instagram}
+    target="_blank"
+    rel="noreferrer"
+    className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-xl transition-all duration-300 hover:bg-pink-500 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-pink-500/40"
+  >
+    <FaInstagram />
+  </a>
+)}
+
 
               <a
-                href={`mailto:${portfolio.personal.email}`}
-                className="w-12 h-12 rounded-full bg-slate-800 hover:bg-cyan-500 hover:text-black transition duration-300 flex items-center justify-center text-xl"
-              >
-                <FaEnvelope />
-              </a>
+  href={`mailto:${portfolio.personal.email}`}
+  className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-xl transition-all duration-300 hover:bg-cyan-500 hover:text-black hover:scale-110 hover:shadow-lg hover:shadow-cyan-500/40"
+>
+  <FaEnvelope />
+</a>
 
             </div>
 

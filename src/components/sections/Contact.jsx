@@ -115,7 +115,7 @@ return (
 
   <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
 
-  Available for Internship
+  Available for Work
 
 </div>
 
@@ -151,46 +151,6 @@ return (
   <span>GitHub Profile</span>
 </a>
 
-<div className="flex gap-4 pt-2">
-
-<a
-  href={contact.github}
-  target="_blank"
-  rel="noreferrer"
-  title="GitHub"
-  aria-label="GitHub Profile"
-  className="w-12 h-12 rounded-full bg-slate-900 flex items-center justify-center hover:bg-cyan-500 hover:text-black transition duration-300"
->
-  <FaGithub />
-</a>
-
-  {contact.linkedin && (
-    <a
-      href={contact.linkedin}
-      target="_blank"
-      rel="noreferrer"
-      title="LinkedIn"
-      aria-label="LinkedIn Profile"
-      className="w-12 h-12 rounded-full bg-slate-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300"
-    >
-      <FaLinkedin />
-    </a>
-  )}
-
-  {contact.instagram && (
-    <a
-      href={contact.instagram}
-      target="_blank"
-      rel="noreferrer"
-      title="Instagram"
-      aria-label="Instagram Profile"
-      className="w-12 h-12 rounded-full bg-slate-900 flex items-center justify-center hover:bg-pink-500 hover:text-white transition duration-300"
-    >
-      <FaInstagram />
-    </a>
-  )}
-
-</div>
             </div>
           </motion.div>
 
