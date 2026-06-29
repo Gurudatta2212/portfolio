@@ -14,28 +14,32 @@ const portfolio = {
     instagram: "https://www.instagram.com/gurudatta.22?igsh=MXRndGF1NmdnZWpxeQ==",
 
     about:
-      "I am a passionate Frontend Developer and Computer Engineering student with hands-on experience in React.js, JavaScript, Tailwind CSS, Node.js, and modern web technologies. I enjoy building responsive, user-friendly web applications and continuously improving my skills by working on real-world projects and learning new technologies.",
+      "I’m a passionate Frontend Developer focused on building modern, responsive, and user-friendly web applications. I enjoy turning ideas into real-world projects while continuously learning new technologies and improving my development skills",
 
   },
 
   aboutSection: [
-    {
-      title: "Education",
-      value: "Diploma in Computer Engineering",
-    },
-    {
-      title: "College",
-      value: "Vidyalankar Polytechnic",
-    },
-    {
-      title: "Internship",
-      value: "Cyber Sanskar (3 Months)",
-    },
-    {
-      title: "Achievement",
-      value: "1st Prize - Final Year Project Competition",
-    },
-  ],
+  {
+    title: "Frontend Development",
+    description:
+      "Building responsive, modern, and user-friendly web applications using React.js, JavaScript, and Tailwind CSS.",
+  },
+  {
+    title: "Real-World Projects",
+    description:
+      "Developing practical software solutions that solve real problems using modern web technologies.",
+  },
+  {
+    title: "Continuous Learning",
+    description:
+      "Always exploring new technologies, improving development skills, and building better applications every day.",
+  },
+  {
+    title: "Problem Solving",
+    description:
+      "Enjoy solving programming challenges and creating clean, efficient, and scalable solutions.",
+  },
+],
 
   skills: [
     { name: "HTML", level: 95 },
