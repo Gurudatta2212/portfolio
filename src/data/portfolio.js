@@ -16,20 +16,6 @@ const portfolio = {
     about:
       "I am a passionate Frontend Developer and Computer Engineering student with hands-on experience in React.js, JavaScript, Tailwind CSS, Node.js, and modern web technologies. I enjoy building responsive, user-friendly web applications and continuously improving my skills by working on real-world projects and learning new technologies.",
 
-    stats: [
-      {
-        number: "2+",
-        title: "Clients Projects",
-      },
-      {
-        number: "1 Year",
-        title: "Experience",
-      },
-      {
-        number: "88.74%",
-        title: "Diploma",
-      },
-    ],
   },
 
   aboutSection: [

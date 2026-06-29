@@ -79,43 +79,14 @@ function Hero() {
 
         {/* Right Side */}
         <motion.div
-          className="relative flex justify-center items-center"
-          initial={{ opacity: 0, x: 80 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+  className="relative flex justify-center items-center lg:justify-end"
+  initial={{ opacity: 0, x: 80 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8 }}
+>
 
           {/* Glow */}
           <div className="absolute w-[420px] h-[420px] rounded-full bg-cyan-500/20 blur-3xl animate-pulse"></div>
-
-          {/* Stats */}
-          <div className="hidden lg:flex flex-col gap-5 absolute -left-20 top-10">
-
-            {portfolio.personal.stats.map((item, index) => (
-              <motion.div
-                key={item.title}
-                animate={{
-                  y: [0, -8, 0],
-                }}
-                transition={{
-                  duration: 3,
-                  delay: index * 0.3,
-                  repeat: Infinity,
-                }}
-                className="bg-slate-900/90 backdrop-blur-md border border-cyan-500 rounded-2xl px-5 py-4 shadow-xl"
-              >
-                <h3 className="text-cyan-400 text-2xl font-bold">
-                  {item.number}
-                </h3>
-
-                <p className="text-slate-300 text-sm">
-                  {item.title}
-                </p>
-
-              </motion.div>
-            ))}
-
-          </div>
 
           {/* Profile Image */}
           <div className="relative w-80 h-80 lg:w-[420px] lg:h-[420px] rounded-full overflow-hidden border-4 border-cyan-500 shadow-[0_0_60px_rgba(34,211,238,0.35)]">
