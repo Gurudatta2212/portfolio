@@ -67,44 +67,51 @@ function Professional() {
         </motion.div>
 
         <div className="flex justify-center mt-14">
-          <div className="bg-slate-900 border border-slate-700 rounded-full p-2 flex gap-2">
 
-            <button
-              onClick={() => setActiveTab("skills")}
-              className={`px-6 py-3 rounded-full font-medium transition ${
-                activeTab === "skills"
-                  ? "bg-cyan-500 text-black"
-                  : "text-slate-300 hover:text-white"
-              }`}
-            >
-              Skills
-            </button>
+  <div className="flex bg-slate-900/80 backdrop-blur-xl border border-slate-700 rounded-full p-2">
 
-            <button
-              onClick={() => setActiveTab("experience")}
-              className={`px-6 py-3 rounded-full font-medium transition ${
-                activeTab === "experience"
-                  ? "bg-cyan-500 text-black"
-                  : "text-slate-300 hover:text-white"
-              }`}
-            >
-              Experience
-            </button>
+    {["skills", "experience", "achievements"].map((tab) => (
 
-            <button
-              onClick={() => setActiveTab("achievements")}
-              className={`px-6 py-3 rounded-full font-medium transition ${
-                activeTab === "achievements"
-                  ? "bg-cyan-500 text-black"
-                  : "text-slate-300 hover:text-white"
-              }`}
-            >
-              Achievements
-            </button>
+      <button
+        key={tab}
+        onClick={() => setActiveTab(tab)}
+        className="relative px-10 py-3 rounded-full font-semibold capitalize"
 
-          </div>
-        </div>
+      >
 
+        {activeTab === tab && (
+
+          <motion.div
+            layoutId="active-pill"
+            className="absolute inset-0 bg-cyan-500 rounded-full"
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 35,
+            }}
+          />
+
+        )}
+
+        <span
+          className={`relative z-10 transition-colors duration-300 ${
+            activeTab === tab
+              ? "text-black"
+              : "text-slate-300"
+          }`}
+        >
+
+          {tab}
+
+        </span>
+
+      </button>
+
+    ))}
+
+  </div>
+
+</div>
         <AnimatePresence mode="wait">
 
         {/* ================= Skills ================= */}
@@ -132,21 +139,48 @@ function Professional() {
           y: -8,
           scale: 1.03,
         }}
-        className="bg-slate-900/80 backdrop-blur-md rounded-3xl border border-slate-700 hover:border-cyan-400 hover:shadow-[0_0_30px_rgba(34,211,238,0.2)] transition-all duration-300 p-6"
+        className="group relative overflow-hidden rounded-3xl border border-slate-700/70 bg-slate-900/60 backdrop-blur-xl p-6 transition-all duration-500 hover:-translate-y-3 hover:border-cyan-400 hover:shadow-[0_0_45px_rgba(34,211,238,0.25)]"
       >
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500">
+
+  <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-56 h-56 rounded-full bg-cyan-400/10 blur-3xl" />
+
+</div>
         <div className="flex justify-center mb-5">
-          {icons[skill.name]}
-        </div>
+
+<motion.div
+whileHover={{
+  rotate: 15,
+  scale: 1.15,
+  y: -3,
+}}
+transition={{
+type:"spring",
+stiffness:350,
+damping:12
+}}
+
+>
+
+{icons[skill.name]}
+
+</motion.div>
+
+</div>
 
         <h3 className="text-xl font-semibold text-center">
-          {skill.name}
-        </h3>
+  {skill.name}
+</h3>
 
-        <p className="text-center text-cyan-400 font-bold mt-2">
+<div className="flex justify-center mt-3">
+
+</div>
+
+       <p className="text-center text-cyan-300 text-lg font-bold mt-3">
           {skill.level}%
         </p>
 
-        <div className="mt-6 h-3 bg-slate-700 rounded-full overflow-hidden">
+        <div className="mt-6 h-3 bg-slate-800 rounded-full overflow-hidden">
           <motion.div
             initial={{ width: 0 }}
             animate={{
@@ -156,10 +190,21 @@ function Professional() {
               duration: 1,
               delay: index * 0.08,
             }}
-            className="h-full rounded-full bg-gradient-to-r from-cyan-400 to-blue-500"
+            className="
+h-full
+rounded-full
+bg-gradient-to-r
+from-cyan-400
+via-cyan-300
+to-blue-500
+shadow-[0_0_18px_rgba(34,211,238,0.7)]
+"
           />
         </div>
-      </motion.div>
+
+<div className="absolute inset-0 rounded-3xl border border-transparent group-hover:border-cyan-400/20 pointer-events-none transition-all duration-500" />
+
+</motion.div>
     ))}
   </motion.div>
 )}
@@ -218,7 +263,7 @@ function Professional() {
               {exp.duration}
             </span>
 
-            <span className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500 text-cyan-400">
+            <span className="px-3 py-1 rounded-full bg-slate-800 border border-cyan-400/20 text-cyan-300 text-xs tracking-wide">
               {exp.type}
             </span>
 

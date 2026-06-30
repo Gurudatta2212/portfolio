@@ -9,9 +9,8 @@ function Navbar() {
   const navLinks = [
     "home",
     "about",
-    "skills",
     "projects",
-    "experience",
+    "Professional",
     "education",
     "contact",
   ];
