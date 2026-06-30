@@ -124,6 +124,29 @@ const portfolio = {
     },
   ],
 
+  achievements: [
+  {
+    title: "1st Prize",
+    description: "Won 1st Prize in the Final Year Project Competition at the institute.",
+    icon: "🏆",
+  },
+  {
+    title: "Best Academic Performance",
+    description: "Received the Best Academic Performance Award in 2023.",
+    icon: "🎓",
+  },
+  {
+    title: "Best Attendance Award",
+    description: "Awarded Best Attendance for maintaining excellent attendance in 2023.",
+    icon: "⭐",
+  },
+  {
+    title: "2+ Client Projects",
+    description: "Successfully completed and delivered multiple client-focused web development projects.",
+    icon: "💻",
+  },
+],
+
   education: [
     {
       degree: "Diploma in Computer Engineering",
