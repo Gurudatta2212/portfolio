@@ -7,13 +7,13 @@ function Navbar() {
   const [active, setActive] = useState("home");
 
   const navLinks = [
-    "home",
-    "about",
-    "projects",
-    "Professional",
-    "education",
-    "contact",
-  ];
+  { id: "home", label: "Home" },
+  { id: "about", label: "About" },
+  { id: "projects", label: "Projects" },
+  { id: "professional", label: "Professional" },
+  { id: "education", label: "Education" },
+  { id: "contact", label: "Contact" },
+];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,23 +53,23 @@ function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((item) => (
-            <li key={item}>
-              <a
-                href={`#${item}`}
-                className={`capitalize transition duration-300 ${
-                  active === item
-                    ? "text-cyan-400"
-                    : "text-slate-300 hover:text-cyan-400"
-                }`}
-              >
-                {item}
-              </a>
+  <li key={item.id}>
+    <a
+      href={`#${item.id}`}
+      className={`transition duration-300 ${
+        active === item.id
+          ? "text-cyan-400"
+          : "text-slate-300 hover:text-cyan-400"
+      }`}
+    >
+      {item.label}
+    </a>
 
-              {active === item && (
-                <div className="h-[2px] bg-cyan-400 rounded-full mt-1" />
-              )}
-            </li>
-          ))}
+    {active === item.id && (
+      <div className="h-[2px] bg-cyan-400 rounded-full mt-1" />
+    )}
+  </li>
+))}
         </ul>
 
         {/* Desktop Buttons */}
@@ -109,20 +109,23 @@ function Navbar() {
           <ul className="flex flex-col items-center gap-6 py-6">
 
             {navLinks.map((item) => (
-              <li key={item}>
-                <a
-                  href={`#${item}`}
-                  onClick={() => setIsOpen(false)}
-                  className={`capitalize ${
-                    active === item
-                      ? "text-cyan-400"
-                      : "text-slate-300"
-                  }`}
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
+  <li key={item.id}>
+    <a
+      href={`#${item.id}`}
+      className={`transition duration-300 ${
+        active === item.id
+          ? "text-cyan-400"
+          : "text-slate-300 hover:text-cyan-400"
+      }`}
+    >
+      {item.label}
+    </a>
+
+    {active === item.id && (
+      <div className="h-[2px] bg-cyan-400 rounded-full mt-1" />
+    )}
+  </li>
+))}
 
             <a
               href={portfolio.personal.github}
