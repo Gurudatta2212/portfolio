@@ -17,19 +17,21 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = navLinks.map((id) => document.getElementById(id));
+  const scrollPosition = window.scrollY + 120;
 
-      sections.forEach((section) => {
-        if (!section) return;
+  navLinks.forEach((item) => {
+    const section = document.getElementById(item.id);
 
-        const top = section.offsetTop - 120;
-        const height = section.offsetHeight;
+    if (!section) return;
 
-        if (window.scrollY >= top && window.scrollY < top + height) {
-          setActive(section.id);
-        }
-      });
-    };
+    const top = section.offsetTop;
+    const bottom = top + section.offsetHeight;
+
+    if (scrollPosition >= top && scrollPosition < bottom) {
+      setActive(item.id);
+    }
+  });
+};
 
     window.addEventListener("scroll", handleScroll);
 

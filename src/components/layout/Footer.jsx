@@ -1,6 +1,6 @@
 import {
   FaGithub,
-  FaEnvelope,
+  FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
 import portfolio from "../../data/portfolio";
@@ -54,16 +54,14 @@ function Footer() {
 )}
 
 
-              <button
-  onClick={() =>
-    document
-      .getElementById("contact")
-      ?.scrollIntoView({ behavior: "smooth" })
-  }
-  className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-xl transition-all duration-300 hover:bg-cyan-500 hover:text-black hover:scale-110 hover:shadow-lg hover:shadow-cyan-500/40"
+<a
+  href={portfolio.personal.linkedin}
+  target="_blank"
+  rel="noreferrer"
+  className="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center hover:bg-blue-600 transition"
 >
-  <FaEnvelope />
-</button>
+  <FaLinkedin />
+</a>
 
             </div>
 

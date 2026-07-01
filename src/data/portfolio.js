@@ -9,7 +9,7 @@ const portfolio = {
     location: "Panvel, Maharashtra, India",
 
     github: "https://github.com/Gurudatta2212",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/gurudatta-mulage-75a89241a/",
     portfolio: "",
     instagram: "https://www.instagram.com/gurudatta.22?igsh=MXRndGF1NmdnZWpxeQ==",
 
@@ -208,7 +208,7 @@ const portfolio = {
   location: "Panvel, Maharashtra, India",
 
   github: "https://github.com/Gurudatta2212",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/gurudatta-mulage-75a89241a/",
   instagram: "https://www.instagram.com/gurudatta.22?igsh=MXRndGF1NmdnZWpxeQ==",
   portfolio: "",
 },
