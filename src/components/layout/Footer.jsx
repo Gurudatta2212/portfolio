@@ -39,7 +39,7 @@ function Footer() {
   rel="noreferrer"
   className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-xl transition-all duration-300 hover:bg-green-500 hover:text-black hover:scale-110 hover:shadow-lg hover:shadow-cyan-500/40"
 >
-  <FaGithub />
+  <FaGithub className="text-xl" />
 </a>
 
               {portfolio.personal.instagram && (
@@ -49,7 +49,7 @@ function Footer() {
     rel="noreferrer"
     className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-xl transition-all duration-300 hover:bg-pink-500 hover:text-white hover:scale-110 hover:shadow-lg hover:shadow-pink-500/40"
   >
-    <FaInstagram />
+    <FaInstagram className="text-xl" />
   </a>
 )}
 
@@ -60,7 +60,7 @@ function Footer() {
   rel="noreferrer"
   className="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center hover:bg-blue-600 transition"
 >
-  <FaLinkedin />
+  <FaLinkedin className="text-xl" />
 </a>
 
             </div>

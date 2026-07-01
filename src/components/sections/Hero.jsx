@@ -130,7 +130,7 @@ className="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex item
 
 >
 
-<FaGithub />
+<FaGithub className="text-2xl" />
 
 </a>
 
@@ -146,7 +146,7 @@ className="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex item
 
 >
 
-<FaInstagram />
+<FaInstagram className="text-2xl" />
 
 </a>
 
@@ -156,7 +156,7 @@ className="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex item
   rel="noreferrer"
   className="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center hover:bg-blue-600 transition"
 >
-  <FaLinkedin />
+  <FaLinkedin className="text-2xl" />
 </a>
 
 </div>
